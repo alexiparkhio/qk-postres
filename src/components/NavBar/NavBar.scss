@@ -32,6 +32,10 @@
     background-color: $white;
 
     & > * {
+      a {
+        text-decoration: none;
+      }
+
       &:first-child {
         margin: 0 $spacing-l 0 $spacing-xxxl;
       }

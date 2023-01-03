@@ -5,7 +5,7 @@ import "./NavBar.scss";
 /* Assets */
 
 /* Custom Hooks */
-import { MOBILE_WIDTH } from "../shared/constants";
+import { IG_URL, MOBILE_WIDTH } from "../shared/constants";
 import { useWindowDimensions } from "../shared/hooks/useWindowDimensions/useWindowDimensions";
 
 export const NavBar: React.FC = () => {
@@ -44,15 +44,11 @@ export const NavBar: React.FC = () => {
       )}
 
       <div className="NavBar__navContainer">
-        <Link
-          to="instagram"
-          spy={true}
-          smooth={true}
-          duration={500}
-          className="NavBar__element"
-        >
-          Instagram
-        </Link>
+        <span className="NavBar__element">
+          <a href={IG_URL} target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a>
+        </span>
 
         <Link
           to="about-us"

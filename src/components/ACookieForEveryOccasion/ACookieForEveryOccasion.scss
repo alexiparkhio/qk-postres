@@ -1,0 +1,24 @@
+@import "../../styles/_config";
+
+.ACookieForEveryOccasion {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-xxxl;
+  text-align: center;
+  background-color: $background-a-cookie;
+
+  & > * {
+    margin: $spacing-l;
+  }
+
+  &__textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    line-height: 1.75;
+  }
+}

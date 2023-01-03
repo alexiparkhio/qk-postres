@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import { AboutUs } from "./components/AboutUs/AboutUs";
+import { ACookieForEveryOccasion } from "./components/ACookieForEveryOccasion/ACookieForEveryOccasion";
 
 /* Components */
 import { NavBar } from "./components/NavBar/NavBar";
@@ -11,6 +12,7 @@ const App: React.FC = () => {
     <div className="App">
       <NavBar />
       <OurProducts />
+      <ACookieForEveryOccasion />
       <AboutUs />
     </div>
   );
