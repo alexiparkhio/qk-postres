@@ -1,0 +1,36 @@
+// Colors
+$white: #fdfdfd;
+$main-font: #49326b;
+$hyperlink: #43234c;
+$background-our-products: #efede9;
+$background-about-us: #efede9;
+
+// Spacings
+$spacing-xs: 4px;
+$spacing-s: 8px;
+$spacing-m: 10px;
+$spacing-l: 12px;
+$spacing-xl: 16px;
+$spacing-xxl: 20px;
+$spacing-xxxl: 32px;
+
+//Fonts
+$font-xs: 4px;
+$font-s: 8px;
+$font-m: 12px;
+$font-l: 16px;
+$font-xl: 24px;
+$font-xxl: 38px;
+
+@font-face {
+  font-family: roboto;
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: bostonAngel;
+  src: url("../assets/fonts/Boston\ Angel\ Regular.ttf");
+}
+
+//Width
+$desktop-width: 1920px;

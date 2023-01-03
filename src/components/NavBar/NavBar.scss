@@ -1,0 +1,66 @@
+@import "../../styles/__config";
+
+.NavBar {
+  &--desktop,
+  &--mobile {
+    width: 100%;
+    height: 74px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $spacing-l;
+    color: $main-font;
+  }
+
+  &__logo {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  &__navContainer {
+    background-color: $white;
+
+    & > * {
+      &:first-child {
+        margin: 0 $spacing-l 0 $spacing-xxxl;
+      }
+
+      &:last-child {
+        margin-left: $spacing-l;
+      }
+    }
+  }
+
+  &__element {
+    background-color: $white;
+    font-size: $font-l;
+    cursor: pointer;
+
+    &:active {
+      opacity: 0.75;
+    }
+  }
+
+  &__contact {
+    background-color: #e3dbeb;
+    border-radius: $spacing-xs;
+    padding: $spacing-l $spacing-xl;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:active {
+      opacity: 0.75;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "./styles/_config";
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: roboto;
+  box-sizing: border-box;
+  max-width: $desktop-width;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
