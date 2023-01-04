@@ -1,0 +1,25 @@
+@import "../../../styles/_config";
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin: $spacing-l;
+
+  &__picture {
+    &:hover {
+      transform: scale(1.05);
+    }
+    width: 240px;
+    height: 320px;
+    border-radius: $spacing-m;
+    background-color: $background-card;
+    transition: 0.2s;
+  }
+
+  .Header {
+    margin-top: $spacing-xxl;
+    font-size: $spacing-xxl;
+  }
+}

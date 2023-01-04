@@ -7,11 +7,13 @@ import { Header } from "../shared/Header/Header";
 import { Text } from "../shared/Text/Text";
 
 /* Constants */
+import { Card } from "../shared/Card/Card";
+import { Cards } from "../shared/Cards/Cards";
 import { IG_URL } from "../shared/constants";
 
 export const OurProducts: React.FC = () => {
   return (
-    <Element id="our-products" name="our-products">
+    <Element id="our-products" name="our-products" className="OurProducts">
       <div className="OurProducts">
         <div className="OurProducts__textContainer">
           <Header>Our Products</Header>
@@ -27,6 +29,13 @@ export const OurProducts: React.FC = () => {
             </a>
           </span>
         </div>
+
+        <Cards>
+          <Card image="cake26" tag="Custom Cakes" />
+          <Card image="star-wars" tag="Custom Cookies" />
+          <Card image="christmas-cookies" tag="Seasonal Cookies" />
+          <Card image="salamanca" tag="Custom Cookie Cakes" />
+        </Cards>
       </div>
     </Element>
   );

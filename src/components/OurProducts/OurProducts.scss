@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: $spacing-xxxl;
+  padding-top: $spacing-xxxl;
   text-align: center;
   background-color: $background-our-products;
 
@@ -27,6 +27,8 @@
   }
 
   & > * {
-    margin: $spacing-l;
+    &:not(:last-child) {
+      margin: $spacing-l;
+    }
   }
 }
