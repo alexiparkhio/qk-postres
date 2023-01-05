@@ -1,0 +1,62 @@
+@import "../../styles/_config";
+
+.ContactUs {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  background-color: $background-contact-us;
+
+  &__box {
+    background-color: $background-contact-us;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px 64px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.75;
+
+    & > * {
+      margin: $spacing-xxl 0;
+    }
+
+    .Header {
+      font-size: 38.8px;
+    }
+
+    .Text {
+      font-size: $spacing-xxl;
+    }
+  }
+
+  &__btn {
+    color: $background-contact-us;
+    font-size: 14.6px;
+    background-color: $contact-us-theme;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+    border-radius: $spacing-s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  &__img {
+    width: 40%;
+  }
+
+  a {
+    color: $contact-us-theme;
+    font-size: $spacing-xl;
+  }
+}
